@@ -1,22 +1,19 @@
 "use client";
-import { FaExternalLinkAlt } from "react-icons/fa";
 import Image from "next/image";
 import { useTheme } from "@/context/ThemeContext";
 
 interface ProjectCardProps {
   title: string;
   description: string;
+  technologies: string[];
   image: string;
-  tags: string[];
-  demo?: string;
 }
 
 export default function ProjectCard({
   title,
   description,
+  technologies,
   image,
-  tags,
-  demo,
 }: ProjectCardProps) {
   const { isDarkMode } = useTheme();
   const imageUrl = image.toLowerCase().endsWith(".tif")
@@ -72,7 +69,7 @@ export default function ProjectCard({
         </p>
 
         <div className="flex flex-wrap gap-2 mb-4">
-          {tags.map((tag, index) => (
+          {technologies?.map((tech, index) => (
             <span
               key={index}
               className={`px-2 py-1 rounded-md text-xs font-medium ${
@@ -81,7 +78,7 @@ export default function ProjectCard({
                   : "bg-blue-50 text-blue-600"
               }`}
             >
-              {tag}
+              {tech}
             </span>
           ))}
         </div>
