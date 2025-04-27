@@ -1,36 +1,142 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio Website
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js 13, TypeScript, and Tailwind CSS. This portfolio showcases my projects, skills, and professional experience with a clean and interactive design.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Responsive Design**: Fully responsive across all device sizes
+- **Dark/Light Mode**: Theme toggle with persistent state
+- **Smooth Animations**: Subtle transitions and hover effects
+- **Modern UI Components**: Clean and professional user interface
+- **SEO Optimized**: Built with SEO best practices
+- **Type-Safe**: Built with TypeScript for better development experience
+
+## 🏗️ Project Structure
+
+```
+src/
+├── app/
+│   └── page.tsx               # Main page component
+├── components/
+│   ├── Header.tsx            # Navigation and theme toggle
+│   ├── Hero.tsx              # Hero section with introduction
+│   ├── Projects.tsx          # Projects showcase section
+│   ├── ProjectCard.tsx       # Individual project card component
+│   ├── Experience.tsx        # Professional experience section
+│   ├── ExperienceCard.tsx    # Individual experience card
+│   ├── Skills.tsx            # Skills and technologies section
+│   ├── Contact.tsx           # Contact form section
+│   ├── Footer.tsx            # Footer with navigation and socials
+│   └── TypeWriter.tsx        # Animated typing effect
+└── context/
+    └── ThemeContext.tsx      # Dark/Light theme context
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🧱 Components Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Header (`Header.tsx`)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Fixed navigation bar with logo
+- Responsive mobile menu
+- Dark/Light theme toggle
+- Resume download button
 
-## Learn More
+### Hero Section (`Hero.tsx`)
 
-To learn more about Next.js, take a look at the following resources:
+- Animated introduction with TypeWriter effect
+- Professional image
+- Quick navigation buttons
+- Gradient background effects
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Projects Section (`Projects.tsx`, `ProjectCard.tsx`)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Grid layout of project cards
+- Interactive project cards with:
+  - Project image/preview
+  - Title and description
+  - Technology tags
+  - Hover effects and animations
 
-## Deploy on Vercel
+### Experience Section (`Experience.tsx`, `ExperienceCard.tsx`)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Timeline of professional experience
+- Detailed cards with:
+  - Role and company information
+  - Key responsibilities
+  - Technologies used
+  - Video demonstrations (where applicable)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Skills Section (`Skills.tsx`)
+
+- Categorized skill bubbles
+- Interactive hover effects
+- Four main categories:
+  - AI & Machine Learning
+  - Programming & Tools
+  - Domain Expertise
+  - Frameworks & Libraries
+
+### Contact Section (`Contact.tsx`)
+
+- Contact form with validation
+- Input fields for:
+  - Name
+  - Email
+  - Subject
+  - Message
+- Form submission handling
+
+### Footer (`Footer.tsx`)
+
+- Site navigation links
+- Social media links
+- Copyright information
+- Logo and branding
+
+## 🎨 Theme Context
+
+The `ThemeContext.tsx` manages the application's theme state:
+
+- Toggles between dark and light modes
+- Persists theme preference
+- Provides theme context to all components
+
+## 🛠️ Technologies Used
+
+- **Next.js 13**: React framework with App Router
+- **TypeScript**: Type-safe development
+- **Tailwind CSS**: Utility-first styling
+- **React Icons**: Icon components
+- **React Context**: State management
+
+## 📱 Responsive Design
+
+The portfolio is fully responsive with:
+
+- Mobile-first approach
+- Breakpoint-specific layouts
+- Optimized images and assets
+- Touch-friendly interactions
+
+## 🎯 SEO Optimization
+
+- Semantic HTML structure
+- Meta tags and descriptions
+- Optimized asset loading
+- Accessibility considerations
+
+## 🚀 Performance Optimization
+
+- Image optimization with Next.js
+- Lazy loading components
+- Minimized bundle size
+- Efficient state management
+
+## 👥 Contact
+
+For any inquiries or collaborations, please reach out through:
+
+- The contact form on the website
+- [https://www.linkedin.com/in/mnk539/
+- [https://github.com/muzammil5539
+- Email: [mnk.7muzammil86@gmail.com]
