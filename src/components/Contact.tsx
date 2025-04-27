@@ -3,8 +3,6 @@ import { useTheme } from "@/context/ThemeContext";
 import { useForm, ValidationError } from "@formspree/react";
 import { useState } from "react";
 
-const formId = process.env.NEXT_PUBLIC_FORMSPREE_FORM_ID;
-
 export default function Contact() {
   const { isDarkMode } = useTheme();
   const [formData, setFormData] = useState({
@@ -14,7 +12,7 @@ export default function Contact() {
     message: "",
   });
 
-  const [state, handleSubmit] = useForm(formId); // Replace with your Formspree form ID
+  const [state, handleSubmit] = useForm("mldbdoaj"); // Replace with your Formspree form ID
 
   if (state.succeeded) {
     return (
