@@ -132,11 +132,25 @@ The portfolio is fully responsive with:
 - Minimized bundle size
 - Efficient state management
 
+## 🌐 Deployment
+
+This application is configured for deployment to Azure Web App using Docker containers and GitHub Actions.
+
+For detailed deployment instructions, see [AZURE_DEPLOYMENT.md](./AZURE_DEPLOYMENT.md)
+
+### Key Deployment Features:
+
+- Containerized application using Docker
+- CI/CD pipeline with GitHub Actions
+- Auto-deployment on code push
+- Environment configuration for development and production
+- Azure Web App optimized Docker configuration
+
 ## 👥 Contact
 
 For any inquiries or collaborations, please reach out through:
 
 - The contact form on the website
-- [https://www.linkedin.com/in/mnk539/
-- [https://github.com/muzammil5539
-- Email: [mnk.7muzammil86@gmail.com]
+- [LinkedIn](https://www.linkedin.com/in/mnk539/)
+- [GitHub](https://github.com/muzammil5539)
+- Email: mnk.7muzammil86@gmail.com

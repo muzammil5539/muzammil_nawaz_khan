@@ -1,4 +1,4 @@
-# Dockerfile for Next.js project
+# Dockerfile for Next.js project optimized for Azure Web App deployment
 
 # 1. Base Stage: Use an official Node.js runtime as a parent image
 FROM node:20-alpine AS base
@@ -13,9 +13,9 @@ COPY package.json package-lock.json* ./
 # COPY package.json pnpm-lock.yaml* ./
 
 # Install dependencies
-RUN npm install
-# RUN yarn install --frozen-lockfile
-# RUN pnpm install --frozen-lockfile
+RUN npm ci --only=production 
+# RUN yarn install --frozen-lockfile --production
+# RUN pnpm install --frozen-lockfile --prod
 
 # 3. Build Stage: Build the Next.js application
 FROM base AS builder
@@ -40,24 +40,19 @@ WORKDIR /app
 
 # Set environment variables
 ENV NODE_ENV=production
+ENV PORT=8080
 # ENV NEXT_PUBLIC_FORMSPREE_FORM_ID=${NEXT_PUBLIC_FORMSPREE_FORM_ID} # You can set this at runtime
 
-# Copy the .next/standalone folder (if you configure output: 'standalone' in next.config.ts)
-# COPY --from=builder /app/.next/standalone ./
-# COPY --from=builder /app/.next/static ./.next/static
-# COPY --from=builder /app/public ./public
-
-# For a standard Next.js build (without output: 'standalone')
+# For Azure Web App, using output: 'standalone' is recommended for better performance
 COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
 
-# Expose the port the app runs on
-EXPOSE 3000
+# Expose the port that Azure Web App expects (8080)
+EXPOSE 8080
 
 # Command to run the application
-# For output: 'standalone', the command would be: CMD ["node", "server.js"]
 CMD ["npm", "start"]
 # CMD ["yarn", "start"]
 # CMD ["pnpm", "start"]
