@@ -41,11 +41,21 @@ export default function ExperienceCard({
           <video
             className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
             controls
+            autoPlay
             muted
             loop
             playsInline
+            onClick={(e) => {
+              const videoElement = e.target as HTMLVideoElement;
+              if (videoElement.paused) {
+                videoElement.play();
+              } else {
+                videoElement.pause();
+              }
+            }}
           >
             <source src={video} type="video/mp4" />
+            Your browser does not support the video tag.
           </video>
           <div
             className={`absolute inset-0 transition-opacity duration-500
@@ -55,6 +65,28 @@ export default function ExperienceCard({
                 : "bg-gradient-to-t from-black/60 via-black/30 to-transparent"
             } group-hover:opacity-70`}
           />
+          <div className="absolute bottom-2 right-2 z-10 bg-black/50 p-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6 text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
+              />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </div>
         </div>
       )}
 
