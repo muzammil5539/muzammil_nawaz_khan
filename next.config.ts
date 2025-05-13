@@ -1,8 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "standalone", // Optimized for container deployments
+  output: "export", // Optimized for static site generation
   poweredByHeader: false,
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
