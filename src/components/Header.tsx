@@ -13,7 +13,6 @@ export default function Header() {
     { name: "Experience", href: "#experience" },
     { name: "Skills", href: "#skills" },
     { name: "Contact", href: "#contact" },
-    { name: "IBM AI Engineer", href: "/ibm-ai-engineer" }, // NEW
   ];
 
   return (
