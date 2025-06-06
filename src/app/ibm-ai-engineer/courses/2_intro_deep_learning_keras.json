@@ -1,0 +1,25 @@
+{
+  "moduleNumber": 2,
+  "title": "Introduction to Deep Learning & Neural Networks with Keras",
+  "about": "Learn the basics of deep learning and neural networks using Keras. Covers perceptrons, activation functions, backpropagation, and building simple neural networks.",
+  "topics": [
+    {
+      "name": "Perceptrons",
+      "details": "Understanding the basic building block of neural networks."
+    },
+    {
+      "name": "Activation Functions",
+      "details": "Explore sigmoid, ReLU, and other activation functions."
+    },
+    {
+      "name": "Backpropagation",
+      "details": "How neural networks learn through error minimization."
+    },
+    {
+      "name": "Building Neural Networks",
+      "details": "Constructing and training simple neural networks using Keras."
+    }
+  ],
+  "labs": [],
+  "summary": "This module introduces the foundational concepts of deep learning and neural networks, providing hands-on experience with Keras for building and training simple models."
+}

@@ -1,0 +1,21 @@
+{
+  "moduleNumber": 5,
+  "title": "Deep Learning with PyTorch",
+  "about": "Advanced deep learning concepts and architectures using PyTorch, including transfer learning and model deployment.",
+  "topics": [
+    {
+      "name": "Advanced Architectures",
+      "details": "Explore complex neural network architectures in PyTorch."
+    },
+    {
+      "name": "Transfer Learning",
+      "details": "Using pre-trained models and fine-tuning for new tasks."
+    },
+    {
+      "name": "Model Deployment",
+      "details": "Deploying PyTorch models for real-world applications."
+    }
+  ],
+  "labs": [],
+  "summary": "This module covers advanced deep learning techniques in PyTorch, including transfer learning and deployment strategies."
+}

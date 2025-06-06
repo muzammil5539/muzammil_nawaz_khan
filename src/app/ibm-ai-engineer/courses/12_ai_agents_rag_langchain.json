@@ -1,0 +1,21 @@
+{
+  "moduleNumber": 12,
+  "title": "Fundamentals of AI Agents Using RAG and LangChain",
+  "about": "Learn the fundamentals of AI agents, Retrieval-Augmented Generation (RAG), and using LangChain for building intelligent applications.",
+  "topics": [
+    {
+      "name": "AI Agents",
+      "details": "Introduction to the concept and architecture of AI agents."
+    },
+    {
+      "name": "Retrieval-Augmented Generation (RAG)",
+      "details": "Combining retrieval and generation for improved AI responses."
+    },
+    {
+      "name": "LangChain",
+      "details": "Using LangChain to build and orchestrate AI agent workflows."
+    }
+  ],
+  "labs": [],
+  "summary": "This module covers the basics of AI agents, RAG, and practical use of LangChain for intelligent applications."
+}

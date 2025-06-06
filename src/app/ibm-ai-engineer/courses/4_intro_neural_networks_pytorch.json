@@ -1,0 +1,21 @@
+{
+  "moduleNumber": 4,
+  "title": "Introduction to Neural Networks and PyTorch",
+  "about": "Introduction to neural networks and deep learning using PyTorch. Learn to build, train, and evaluate neural networks.",
+  "topics": [
+    {
+      "name": "PyTorch Basics",
+      "details": "Getting started with tensors and basic operations in PyTorch."
+    },
+    {
+      "name": "Building Neural Networks",
+      "details": "Constructing neural networks from scratch using PyTorch."
+    },
+    {
+      "name": "Training and Evaluation",
+      "details": "Training models and evaluating their performance."
+    }
+  ],
+  "labs": [],
+  "summary": "This module introduces neural networks and deep learning using PyTorch, focusing on model construction, training, and evaluation."
+}

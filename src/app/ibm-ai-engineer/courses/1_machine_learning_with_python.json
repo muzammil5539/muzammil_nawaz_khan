@@ -1,0 +1,64 @@
+{
+  "moduleNumber": 1,
+  "title": "Machine Learning with Python",
+  "about": "Covers regression, classification, clustering, pipelines, model evaluation, and dimensionality reduction using Python and scikit-learn.",
+  "topics": [
+    {
+      "name": "Regression",
+      "details": "Simple and multiple linear regression, model evaluation, and prediction."
+    },
+    {
+      "name": "Classification",
+      "details": "Logistic regression, decision trees, random forests, and XGBoost for classification tasks."
+    },
+    {
+      "name": "Clustering",
+      "details": "K-Means clustering for unsupervised learning and customer segmentation."
+    },
+    {
+      "name": "Dimensionality Reduction",
+      "details": "Principal Component Analysis (PCA) for reducing feature space."
+    },
+    {
+      "name": "Pipelines & Model Selection",
+      "details": "Building ML pipelines and using GridSearchCV for hyperparameter tuning."
+    }
+  ],
+  "labs": [
+    {
+      "name": "Simple Regression",
+      "file": "module 2/Simple-Linear-Regression.ipynb"
+    },
+    {
+      "name": "Multiple Linear Regression",
+      "file": "module 2/Mulitple-Linear-Regression.ipynb"
+    },
+    {
+      "name": "Logistic Regression",
+      "file": "module 2 Logistic Regression/Logistic_Regression.ipynb"
+    },
+    { "name": "Decision Trees", "file": "module 3/Decision_trees.ipynb" },
+    {
+      "name": "Random Forests & XGBoost",
+      "file": "module 3/Random_%20Forests%20_XGBoost.ipynb"
+    },
+    {
+      "name": "K-Means Clustering",
+      "file": "module 4/K-Means-Customer-Seg.ipynb"
+    },
+    { "name": "PCA", "file": "module 4/PCA.ipynb" },
+    {
+      "name": "ML Pipelines & GridSearchCV",
+      "file": "module 5/ML_Pipelines_and_GridSearchCV.ipynb"
+    },
+    {
+      "name": "Practice Project",
+      "file": "module 6/Practice_Project_v1.ipynb"
+    },
+    {
+      "name": "Final Project",
+      "file": "module 6/FinalProject_AUSWeather.ipynb"
+    }
+  ],
+  "summary": "This module provides a comprehensive introduction to machine learning using Python, covering both supervised and unsupervised learning techniques, model evaluation, and practical implementation with real datasets."
+}

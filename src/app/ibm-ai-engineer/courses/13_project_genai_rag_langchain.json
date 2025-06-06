@@ -1,0 +1,21 @@
+{
+  "moduleNumber": 13,
+  "title": "Project: Generative AI Applications with RAG and LangChain",
+  "about": "Capstone project focused on building generative AI applications using RAG and LangChain.",
+  "topics": [
+    {
+      "name": "Project Design",
+      "details": "Defining objectives and requirements for a generative AI application."
+    },
+    {
+      "name": "Implementation",
+      "details": "Building and integrating RAG and LangChain components."
+    },
+    {
+      "name": "Evaluation",
+      "details": "Testing and evaluating the final application."
+    }
+  ],
+  "labs": [],
+  "summary": "This capstone module brings together all previous concepts in a practical generative AI project using RAG and LangChain."
+}

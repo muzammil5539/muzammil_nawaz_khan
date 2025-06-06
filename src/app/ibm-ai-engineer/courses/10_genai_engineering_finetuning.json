@@ -1,0 +1,17 @@
+{
+  "moduleNumber": 10,
+  "title": "Generative AI Engineering and Fine-Tuning Transformers",
+  "about": "Learn engineering best practices for generative AI and how to fine-tune transformer models for specific tasks.",
+  "topics": [
+    {
+      "name": "Engineering Practices",
+      "details": "Best practices for building and maintaining generative AI systems."
+    },
+    {
+      "name": "Fine-Tuning Transformers",
+      "details": "Advanced techniques for fine-tuning transformer models."
+    }
+  ],
+  "labs": [],
+  "summary": "This module covers engineering and fine-tuning practices for generative AI with transformer models."
+}

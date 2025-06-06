@@ -1,0 +1,21 @@
+{
+  "moduleNumber": 3,
+  "title": "Deep Learning with Keras and Tensorflow",
+  "about": "Build and train deep learning models using Keras and TensorFlow. Topics include CNNs, RNNs, and advanced model architectures.",
+  "topics": [
+    {
+      "name": "Convolutional Neural Networks (CNNs)",
+      "details": "Image processing and feature extraction using CNNs."
+    },
+    {
+      "name": "Recurrent Neural Networks (RNNs)",
+      "details": "Sequence modeling and time series analysis with RNNs."
+    },
+    {
+      "name": "Advanced Architectures",
+      "details": "Explore deeper and more complex neural network structures."
+    }
+  ],
+  "labs": [],
+  "summary": "This module focuses on building and training advanced deep learning models using Keras and TensorFlow, including both CNNs and RNNs."
+}

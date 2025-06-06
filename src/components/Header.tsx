@@ -13,6 +13,7 @@ export default function Header() {
     { name: "Experience", href: "#experience" },
     { name: "Skills", href: "#skills" },
     { name: "Contact", href: "#contact" },
+    { name: "IBM AI Engineer", href: "/ibm-ai-engineer" }, // NEW
   ];
 
   return (
@@ -106,14 +107,11 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`relative py-2 group ${
-                    isDarkMode
-                      ? "text-gray-300 hover:text-white"
-                      : "text-gray-600 hover:text-gray-900"
+                  className={`hover:text-blue-600 transition-colors ${
+                    isDarkMode ? "text-gray-300" : "text-gray-600"
                   }`}
                 >
-                  <span>{item.name}</span>
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+                  {item.name}
                 </Link>
               ))}
               <a
